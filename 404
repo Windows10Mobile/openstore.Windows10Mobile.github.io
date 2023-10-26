@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Store</title>
+      <script>
+        (function (path) {
+          let sl = path.split('/');
+          let id = sl[sl.length - 1];
+          let comp = id.replace("-", "");
+          if (ls.toString().toLowerCase() === "unigram") {
+            location.replace("ms-windows-store://pdp/?PFN=49197Wirdschon.UnigramMobile_agdwqmbyv5e4e");
+          } else if (ls.toString().toLowerCase() === "appinstaller") {
+            location.replace("ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe");
+          } else {
+            location.replace("ms-windows-store://pdp/?ProductId=" + id);
+          }
+        })(location.path);
+      </script>
+  </head>
+  <body>
+    <h2>JavaScript</h2>
+    <br/>
+    <span>Enable JavaScript</span>
+  </body>
+</html>
