@@ -6,10 +6,10 @@
         (function (path) {
           let sl = path.split('/');
           let id = sl[sl.length - 1];
-          let comp = id.replace("-", "");
-          if (ls.toString().toLowerCase() === "unigram") {
+          let comp = id.toString().replace("-", "").toLowerCase();
+          if (comp === "unigram") {
             location.replace("ms-windows-store://pdp/?PFN=49197Wirdschon.UnigramMobile_agdwqmbyv5e4e");
-          } else if (ls.toString().toLowerCase() === "appinstaller") {
+          } else if (comp === "appinstaller") {
             location.replace("ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe");
           } else {
             location.replace("ms-windows-store://pdp/?ProductId=" + id);
